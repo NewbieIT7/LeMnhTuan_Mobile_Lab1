@@ -16,7 +16,11 @@ import { Stack } from "./bai22";
 import { CardPayment, CashPayment } from "./bai23";
 import { AirConditioner, Fan } from "./bai24";
 import { Shape } from "./bai25";
+import { Order } from "./bai26";
+import { Teacher } from "./bai27";
+import { Car29, Robot } from "./bai29";
 import { Car } from "./bai3";
+import { School } from "./bai30";
 import { Rectangle } from "./bai4";
 import { BankAccount } from "./bai5";
 import { Book } from "./bai6";
@@ -184,3 +188,38 @@ ac.turnOn();
 // Bai 25
 console.log('Bai 25:');
 Shape.describe();
+
+// Bai 26
+console.log('Bai 26:');
+const order = new Order();
+order.addProduct(new Product('Prod1', 50));
+order.addProduct(new Product('Prod2', 100));
+console.log('Total:', order.calculateTotal());
+
+// Bai 27
+console.log('Bai 27:');
+const teacher = new Teacher('Mr. Smith', 40, 'Math');
+teacher.introduce();
+
+// Bai 28
+console.log('Bai 28:');
+const dog28 = new Dog19("Dog");
+dog28.makeSound();
+const cat28 = new Cat19("Cat");
+cat28.makeSound();
+
+// Bai 29
+console.log('Bai 29:');
+const car29 = new Car29();
+car29.move();
+const robot = new Robot();
+robot.move();
+
+// Bai 30
+console.log('Bai 30:');
+const school = new School();
+const student30 = new Student('Student1', 15, 'B');
+const teacher30 = new Teacher('Teacher1', 35, 'Science');
+school.addStudent(student30);
+school.addTeacher(teacher30);
+school.displayInfo();

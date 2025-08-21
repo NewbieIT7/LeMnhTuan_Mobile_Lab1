@@ -18,7 +18,11 @@ const bai22_1 = require("./bai22");
 const bai23_1 = require("./bai23");
 const bai24_1 = require("./bai24");
 const bai25_1 = require("./bai25");
+const bai26_1 = require("./bai26");
+const bai27_1 = require("./bai27");
+const bai29_1 = require("./bai29");
 const bai3_1 = require("./bai3");
+const bai30_1 = require("./bai30");
 const bai4_1 = require("./bai4");
 const bai5_1 = require("./bai5");
 const bai6_1 = require("./bai6");
@@ -161,3 +165,33 @@ ac.turnOn();
 // Bai 25
 console.log('Bai 25:');
 bai25_1.Shape.describe();
+// Bai 26
+console.log('Bai 26:');
+const order = new bai26_1.Order();
+order.addProduct(new bai8_1.Product('Prod1', 50));
+order.addProduct(new bai8_1.Product('Prod2', 100));
+console.log('Total:', order.calculateTotal());
+// Bai 27
+console.log('Bai 27:');
+const teacher = new bai27_1.Teacher('Mr. Smith', 40, 'Math');
+teacher.introduce();
+// Bai 28
+console.log('Bai 28:');
+const dog28 = new bai19_1.Dog19("Dog");
+dog28.makeSound();
+const cat28 = new bai19_1.Cat19("Cat");
+cat28.makeSound();
+// Bai 29
+console.log('Bai 29:');
+const car29 = new bai29_1.Car29();
+car29.move();
+const robot = new bai29_1.Robot();
+robot.move();
+// Bai 30
+console.log('Bai 30:');
+const school = new bai30_1.School();
+const student30 = new bai2_1.Student('Student1', 15, 'B');
+const teacher30 = new bai27_1.Teacher('Teacher1', 35, 'Science');
+school.addStudent(student30);
+school.addTeacher(teacher30);
+school.displayInfo();
