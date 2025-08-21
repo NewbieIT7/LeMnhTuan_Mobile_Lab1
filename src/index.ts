@@ -1,11 +1,16 @@
 import { Person } from "./bai1";
 import { Account } from "./bai10";
-import { Cat, Dog } from "./bai11";
+import { Cat, Dog, } from "./bai11";
 import { Bird, Fish } from "./bai12";
 import { Circle, Square } from "./bai13";
 import { Developer, Manager } from "./bai14";
 import { Library } from "./bai15";
+import { Box } from "./bai16";
+import { Logger } from "./bai17";
+import { MathUtil } from "./bai18";
+import { Animal19, Cat19, Dog19 } from "./bai19";
 import { Student } from "./bai2";
+import { Bike, Car20 } from "./bai20";
 import { Car } from "./bai3";
 import { Rectangle } from "./bai4";
 import { BankAccount } from "./bai5";
@@ -109,5 +114,36 @@ const library = new Library();
 const book15 = new Book('Book1', 'Author1', 2020);
 library.addBook(book15);
 console.log('Books in Library:', library.books);
+
+// Bai 16
+console.log('Bai 16:');
+const boxString = new Box<string>('Hello');
+console.log('Box Value:', boxString.value);
+
+// Bai 17
+console.log('Bai 17:');
+const logger = Logger.getInstance();
+logger.log('Log message');
+
+// Bai 18
+console.log('Bai 18:');
+console.log('Add:', MathUtil.add(5, 3));
+console.log('Subtract:', MathUtil.subtract(5, 3));
+console.log('Multiply:', MathUtil.multiply(5, 3));
+console.log('Divide:', MathUtil.divide(5, 3));
+
+// Bai 19
+console.log('Bai 19: Demonstrate method overriding using polymorphism');
+const animals: Animal19[] = [new Dog19('Buddy'), new Cat19('Whiskers')];
+animals.forEach(animal => {
+    animal.makeSound();
+});
+
+// Bai 20
+console.log('Bai 20:');
+const car20 = new Car20();
+car20.start();
+const bike = new Bike();
+bike.start();
 
 

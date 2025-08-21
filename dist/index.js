@@ -7,7 +7,12 @@ const bai12_1 = require("./bai12");
 const bai13_1 = require("./bai13");
 const bai14_1 = require("./bai14");
 const bai15_1 = require("./bai15");
+const bai16_1 = require("./bai16");
+const bai17_1 = require("./bai17");
+const bai18_1 = require("./bai18");
+const bai19_1 = require("./bai19");
 const bai2_1 = require("./bai2");
+const bai20_1 = require("./bai20");
 const bai3_1 = require("./bai3");
 const bai4_1 = require("./bai4");
 const bai5_1 = require("./bai5");
@@ -97,3 +102,29 @@ const library = new bai15_1.Library();
 const book15 = new bai6_1.Book('Book1', 'Author1', 2020);
 library.addBook(book15);
 console.log('Books in Library:', library.books);
+// Bai 16
+console.log('Bai 16:');
+const boxString = new bai16_1.Box('Hello');
+console.log('Box Value:', boxString.value);
+// Bai 17
+console.log('Bai 17:');
+const logger = bai17_1.Logger.getInstance();
+logger.log('Log message');
+// Bai 18
+console.log('Bai 18:');
+console.log('Add:', bai18_1.MathUtil.add(5, 3));
+console.log('Subtract:', bai18_1.MathUtil.subtract(5, 3));
+console.log('Multiply:', bai18_1.MathUtil.multiply(5, 3));
+console.log('Divide:', bai18_1.MathUtil.divide(5, 3));
+// Bai 19
+console.log('Bai 19: Demonstrate method overriding using polymorphism');
+const animals = [new bai19_1.Dog19('Buddy'), new bai19_1.Cat19('Whiskers')];
+animals.forEach(animal => {
+    animal.makeSound();
+});
+// Bai 20
+console.log('Bai 20:');
+const car20 = new bai20_1.Car20();
+car20.start();
+const bike = new bai20_1.Bike();
+bike.start();
