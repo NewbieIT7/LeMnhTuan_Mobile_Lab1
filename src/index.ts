@@ -1,5 +1,10 @@
 import { Person } from "./bai1";
 import { Account } from "./bai10";
+import { Cat, Dog } from "./bai11";
+import { Bird, Fish } from "./bai12";
+import { Circle, Square } from "./bai13";
+import { Developer, Manager } from "./bai14";
+import { Library } from "./bai15";
 import { Student } from "./bai2";
 import { Car } from "./bai3";
 import { Rectangle } from "./bai4";
@@ -57,11 +62,11 @@ console.log('Filtered Products:', filtered);
 
 // Bai 9
 console.log('Bai 9:');
-class Dog implements Animal {
+class Dog1 implements Animal {
   name: string = 'Dog';
   sound() { console.log('Woof!'); }
 }
-const dog = new Dog();
+const dog = new Dog1();
 dog.sound();
 
 // Bai 10
@@ -69,3 +74,40 @@ console.log('Bai 10:');
 const account10 = new Account('123', 1000);
 console.log('ID:', account10.id);
 console.log('Created At:', account10.createdAt);
+
+// Bai 11
+console.log('Bai 11:');
+const dog11 = new Dog('Buddy');
+dog11.bark();
+const cat11 = new Cat('Whiskers');
+cat11.meow();
+
+// Bai 12
+console.log('Bai 12:');
+const bird = new Bird();
+bird.fly();
+const fish = new Fish();
+fish.swim();
+
+// Bai 13
+console.log('Bai 13:');
+const square = new Square(4);
+console.log('Square Area:', square.area());
+const circle = new Circle(3);
+console.log('Circle Area:', circle.area());
+
+// Bai 14
+console.log('Bai 14:');
+const manager = new Manager('Eve');
+manager.manageTeam();
+const developer = new Developer('Frank');
+developer.code();
+
+// Bai 15
+console.log('Bai 15:');
+const library = new Library();
+const book15 = new Book('Book1', 'Author1', 2020);
+library.addBook(book15);
+console.log('Books in Library:', library.books);
+
+
