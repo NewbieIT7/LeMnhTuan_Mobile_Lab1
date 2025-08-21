@@ -13,6 +13,11 @@ const bai18_1 = require("./bai18");
 const bai19_1 = require("./bai19");
 const bai2_1 = require("./bai2");
 const bai20_1 = require("./bai20");
+const bai21_1 = require("./bai21");
+const bai22_1 = require("./bai22");
+const bai23_1 = require("./bai23");
+const bai24_1 = require("./bai24");
+const bai25_1 = require("./bai25");
 const bai3_1 = require("./bai3");
 const bai4_1 = require("./bai4");
 const bai5_1 = require("./bai5");
@@ -128,3 +133,31 @@ const car20 = new bai20_1.Car20();
 car20.start();
 const bike = new bai20_1.Bike();
 bike.start();
+// Bai 21
+console.log('Bai 21:');
+const repo = new bai21_1.Repository();
+repo.add('Item1');
+console.log('All Items:', repo.getAll());
+// Bai 22
+console.log('Bai 22:');
+const stack = new bai22_1.Stack();
+stack.push(1);
+stack.push(2);
+console.log('Peek:', stack.peek());
+console.log('Pop:', stack.pop());
+console.log('Is Empty:', stack.isEmpty());
+// Bai 23
+console.log('Bai 23:');
+const cash = new bai23_1.CashPayment();
+cash.pay(100);
+const card = new bai23_1.CardPayment();
+card.pay(200);
+// Bai 24
+console.log('Bai 24:');
+const fan = new bai24_1.Fan();
+fan.turnOn();
+const ac = new bai24_1.AirConditioner();
+ac.turnOn();
+// Bai 25
+console.log('Bai 25:');
+bai25_1.Shape.describe();

@@ -11,6 +11,11 @@ import { MathUtil } from "./bai18";
 import { Animal19, Cat19, Dog19 } from "./bai19";
 import { Student } from "./bai2";
 import { Bike, Car20 } from "./bai20";
+import { Repository } from "./bai21";
+import { Stack } from "./bai22";
+import { CardPayment, CashPayment } from "./bai23";
+import { AirConditioner, Fan } from "./bai24";
+import { Shape } from "./bai25";
 import { Car } from "./bai3";
 import { Rectangle } from "./bai4";
 import { BankAccount } from "./bai5";
@@ -147,3 +152,35 @@ const bike = new Bike();
 bike.start();
 
 
+// Bai 21
+console.log('Bai 21:');
+const repo = new Repository<string>();
+repo.add('Item1');
+console.log('All Items:', repo.getAll());
+
+// Bai 22
+console.log('Bai 22:');
+const stack = new Stack<number>();
+stack.push(1);
+stack.push(2);
+console.log('Peek:', stack.peek());
+console.log('Pop:', stack.pop());
+console.log('Is Empty:', stack.isEmpty());
+
+// Bai 23
+console.log('Bai 23:');
+const cash = new CashPayment();
+cash.pay(100);
+const card = new CardPayment();
+card.pay(200);
+
+// Bai 24
+console.log('Bai 24:');
+const fan = new Fan();
+fan.turnOn();
+const ac = new AirConditioner();
+ac.turnOn();
+
+// Bai 25
+console.log('Bai 25:');
+Shape.describe();
